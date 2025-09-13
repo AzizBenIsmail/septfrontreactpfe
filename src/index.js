@@ -1,20 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import Navbar from './components/navbar/Navbar'
-// import Navbar_Visiteur from './components/navbar/Navbar_Visiteur'
-// import Emna from './Emna';
-// import Carousel from './components/Carousel/Carousel';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import RoutesComponent from "./RoutesComponent";
+import { BrowserRouter } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import reportWebVitals from "./reportWebVitals";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Navbar/>
-    <App />
-    {/* <Emna />
-    <Carousel/> */}
+    <BrowserRouter>
+      <RoutesComponent />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

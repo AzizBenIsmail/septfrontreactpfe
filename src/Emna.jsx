@@ -1,10 +1,8 @@
 import React from 'react';
-import Footer from "./components/footer/Footer";
-export default function emna() {
+export default function emna(props) {
   return (
     <div>
-      hello i m emna
-      <Footer/>
+      hello i m {props.etudiant.nom} {props.etudiant.prenom}
     </div>
   )
 }
